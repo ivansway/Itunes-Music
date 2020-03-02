@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41EDA726240D84A50074262B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDA725240D84A50074262B /* AppDelegate.swift */; };
+		41EDA728240D84A50074262B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDA727240D84A50074262B /* SceneDelegate.swift */; };
+		41EDA72A240D84A50074262B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDA729240D84A50074262B /* ViewController.swift */; };
+		41EDA72D240D84A50074262B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EDA72B240D84A50074262B /* Main.storyboard */; };
+		41EDA72F240D84A70074262B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41EDA72E240D84A70074262B /* Assets.xcassets */; };
+		41EDA732240D84A70074262B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41EDA730240D84A70074262B /* LaunchScreen.storyboard */; };
+		41EDA73D240D84A80074262B /* Itunes_MusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDA73C240D84A80074262B /* Itunes_MusicTests.swift */; };
+		41EDA748240D84A80074262B /* Itunes_MusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EDA747240D84A80074262B /* Itunes_MusicUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41EDA739240D84A80074262B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41EDA71A240D84A50074262B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41EDA721240D84A50074262B;
+			remoteInfo = "Itunes Music";
+		};
+		41EDA744240D84A80074262B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41EDA71A240D84A50074262B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41EDA721240D84A50074262B;
+			remoteInfo = "Itunes Music";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41EDA722240D84A50074262B /* Itunes Music.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Itunes Music.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EDA725240D84A50074262B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41EDA727240D84A50074262B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41EDA729240D84A50074262B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41EDA72C240D84A50074262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41EDA72E240D84A70074262B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41EDA731240D84A70074262B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41EDA733240D84A70074262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EDA738240D84A80074262B /* Itunes MusicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Itunes MusicTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EDA73C240D84A80074262B /* Itunes_MusicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itunes_MusicTests.swift; sourceTree = "<group>"; };
+		41EDA73E240D84A80074262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41EDA743240D84A80074262B /* Itunes MusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Itunes MusicUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EDA747240D84A80074262B /* Itunes_MusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Itunes_MusicUITests.swift; sourceTree = "<group>"; };
+		41EDA749240D84A80074262B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41EDA71F240D84A50074262B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EDA735240D84A80074262B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EDA740240D84A80074262B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41EDA719240D84A50074262B = {
+			isa = PBXGroup;
+			children = (
+				41EDA724240D84A50074262B /* Itunes Music */,
+				41EDA73B240D84A80074262B /* Itunes MusicTests */,
+				41EDA746240D84A80074262B /* Itunes MusicUITests */,
+				41EDA723240D84A50074262B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41EDA723240D84A50074262B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41EDA722240D84A50074262B /* Itunes Music.app */,
+				41EDA738240D84A80074262B /* Itunes MusicTests.xctest */,
+				41EDA743240D84A80074262B /* Itunes MusicUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41EDA724240D84A50074262B /* Itunes Music */ = {
+			isa = PBXGroup;
+			children = (
+				41EDA725240D84A50074262B /* AppDelegate.swift */,
+				41EDA727240D84A50074262B /* SceneDelegate.swift */,
+				41EDA729240D84A50074262B /* ViewController.swift */,
+				41EDA72B240D84A50074262B /* Main.storyboard */,
+				41EDA72E240D84A70074262B /* Assets.xcassets */,
+				41EDA730240D84A70074262B /* LaunchScreen.storyboard */,
+				41EDA733240D84A70074262B /* Info.plist */,
+			);
+			path = "Itunes Music";
+			sourceTree = "<group>";
+		};
+		41EDA73B240D84A80074262B /* Itunes MusicTests */ = {
+			isa = PBXGroup;
+			children = (
+				41EDA73C240D84A80074262B /* Itunes_MusicTests.swift */,
+				41EDA73E240D84A80074262B /* Info.plist */,
+			);
+			path = "Itunes MusicTests";
+			sourceTree = "<group>";
+		};
+		41EDA746240D84A80074262B /* Itunes MusicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41EDA747240D84A80074262B /* Itunes_MusicUITests.swift */,
+				41EDA749240D84A80074262B /* Info.plist */,
+			);
+			path = "Itunes MusicUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41EDA721240D84A50074262B /* Itunes Music */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EDA74C240D84A80074262B /* Build configuration list for PBXNativeTarget "Itunes Music" */;
+			buildPhases = (
+				41EDA71E240D84A50074262B /* Sources */,
+				41EDA71F240D84A50074262B /* Frameworks */,
+				41EDA720240D84A50074262B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Itunes Music";
+			productName = "Itunes Music";
+			productReference = 41EDA722240D84A50074262B /* Itunes Music.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41EDA737240D84A80074262B /* Itunes MusicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EDA74F240D84A80074262B /* Build configuration list for PBXNativeTarget "Itunes MusicTests" */;
+			buildPhases = (
+				41EDA734240D84A80074262B /* Sources */,
+				41EDA735240D84A80074262B /* Frameworks */,
+				41EDA736240D84A80074262B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41EDA73A240D84A80074262B /* PBXTargetDependency */,
+			);
+			name = "Itunes MusicTests";
+			productName = "Itunes MusicTests";
+			productReference = 41EDA738240D84A80074262B /* Itunes MusicTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41EDA742240D84A80074262B /* Itunes MusicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41EDA752240D84A80074262B /* Build configuration list for PBXNativeTarget "Itunes MusicUITests" */;
+			buildPhases = (
+				41EDA73F240D84A80074262B /* Sources */,
+				41EDA740240D84A80074262B /* Frameworks */,
+				41EDA741240D84A80074262B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41EDA745240D84A80074262B /* PBXTargetDependency */,
+			);
+			name = "Itunes MusicUITests";
+			productName = "Itunes MusicUITests";
+			productReference = 41EDA743240D84A80074262B /* Itunes MusicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41EDA71A240D84A50074262B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Ivan Myrza";
+				TargetAttributes = {
+					41EDA721240D84A50074262B = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					41EDA737240D84A80074262B = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 41EDA721240D84A50074262B;
+					};
+					41EDA742240D84A80074262B = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = 41EDA721240D84A50074262B;
+					};
+				};
+			};
+			buildConfigurationList = 41EDA71D240D84A50074262B /* Build configuration list for PBXProject "Itunes Music" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41EDA719240D84A50074262B;
+			productRefGroup = 41EDA723240D84A50074262B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41EDA721240D84A50074262B /* Itunes Music */,
+				41EDA737240D84A80074262B /* Itunes MusicTests */,
+				41EDA742240D84A80074262B /* Itunes MusicUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41EDA720240D84A50074262B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EDA732240D84A70074262B /* LaunchScreen.storyboard in Resources */,
+				41EDA72F240D84A70074262B /* Assets.xcassets in Resources */,
+				41EDA72D240D84A50074262B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EDA736240D84A80074262B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EDA741240D84A80074262B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41EDA71E240D84A50074262B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EDA72A240D84A50074262B /* ViewController.swift in Sources */,
+				41EDA726240D84A50074262B /* AppDelegate.swift in Sources */,
+				41EDA728240D84A50074262B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EDA734240D84A80074262B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EDA73D240D84A80074262B /* Itunes_MusicTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41EDA73F240D84A80074262B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41EDA748240D84A80074262B /* Itunes_MusicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41EDA73A240D84A80074262B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41EDA721240D84A50074262B /* Itunes Music */;
+			targetProxy = 41EDA739240D84A80074262B /* PBXContainerItemProxy */;
+		};
+		41EDA745240D84A80074262B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41EDA721240D84A50074262B /* Itunes Music */;
+			targetProxy = 41EDA744240D84A80074262B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41EDA72B240D84A50074262B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41EDA72C240D84A50074262B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41EDA730240D84A70074262B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41EDA731240D84A70074262B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41EDA74A240D84A80074262B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41EDA74B240D84A80074262B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41EDA74D240D84A80074262B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQU277275;
+				INFOPLIST_FILE = "Itunes Music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myIdentifier.Itunes-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41EDA74E240D84A80074262B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQU277275;
+				INFOPLIST_FILE = "Itunes Music/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myIdentifier.Itunes-Music";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41EDA750240D84A80074262B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQU277275;
+				INFOPLIST_FILE = "Itunes MusicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myIdentifier.Itunes-MusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Itunes Music.app/Itunes Music";
+			};
+			name = Debug;
+		};
+		41EDA751240D84A80074262B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQU277275;
+				INFOPLIST_FILE = "Itunes MusicTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myIdentifier.Itunes-MusicTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Itunes Music.app/Itunes Music";
+			};
+			name = Release;
+		};
+		41EDA753240D84A80074262B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQU277275;
+				INFOPLIST_FILE = "Itunes MusicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myIdentifier.Itunes-MusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Itunes Music";
+			};
+			name = Debug;
+		};
+		41EDA754240D84A80074262B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8TQU277275;
+				INFOPLIST_FILE = "Itunes MusicUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.myIdentifier.Itunes-MusicUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Itunes Music";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41EDA71D240D84A50074262B /* Build configuration list for PBXProject "Itunes Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EDA74A240D84A80074262B /* Debug */,
+				41EDA74B240D84A80074262B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EDA74C240D84A80074262B /* Build configuration list for PBXNativeTarget "Itunes Music" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EDA74D240D84A80074262B /* Debug */,
+				41EDA74E240D84A80074262B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EDA74F240D84A80074262B /* Build configuration list for PBXNativeTarget "Itunes MusicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EDA750240D84A80074262B /* Debug */,
+				41EDA751240D84A80074262B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41EDA752240D84A80074262B /* Build configuration list for PBXNativeTarget "Itunes MusicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41EDA753240D84A80074262B /* Debug */,
+				41EDA754240D84A80074262B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41EDA71A240D84A50074262B /* Project object */;
+}
