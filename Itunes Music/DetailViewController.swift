@@ -11,8 +11,11 @@ import UIKit
 class DetailViewController: UIViewController {
     
     let networkManager = NetworkManager()
+    var indexPath: Int?
     var results: [Results]?
+    var mirror = Mirror(reflecting: MainCollectionViewController())
     
+
     let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -42,24 +45,26 @@ class DetailViewController: UIViewController {
         self.view.addSubview(genreLabel)
         attachInfoToItems()
         setUpLayOuts()
+        
+        for case let (label, value) in mirror.children {
+            print(label as Any, value)
+        }
     }
     
     func attachInfoToItems() {
         
-        self.networkManager.getAlbumsData { (results) in
-            
-        guard let results = results,
-            let URLString = results[0].artworkUrl100,
+        guard let indexPath = self.indexPath,
+            let results = results,
+            let URLString = results[indexPath].artworkUrl100,
             let url = URL(string: URLString) else { return }
+        
+        DispatchQueue.global().async {
             
-            DispatchQueue.global().async {
-                
-                guard let data = try? Data(contentsOf: url) else { return }
-                
-                if let image = UIImage(data: data) {
-                    DispatchQueue.main.async {
-                        self.imageView.image = image
-                    }
+            guard let data = try? Data(contentsOf: url) else { return }
+            
+            if let image = UIImage(data: data) {
+                DispatchQueue.main.async {
+                    self.imageView.image = image
                 }
             }
         }
@@ -84,6 +89,4 @@ class DetailViewController: UIViewController {
         genreLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 1/4).isActive = true
         genreLabel.heightAnchor.constraint(equalToConstant: 30).isActive = true
     }
-    
-    
 }

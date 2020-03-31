@@ -8,18 +8,18 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class MainCollectionViewController: UICollectionViewController, UISearchBarDelegate {
     
-    var networkManager = NetworkManager()
-    let mainViewCell = MainViewCell()
-    let detailViewController = DetailViewController()
-    
-    let searchBar = UISearchBar()
+    private let reuseIdentifier = "Cell"
     var sortedResults = [Results]()
     var filteredResults = [Results]()
     var isSearching = false
+
+    
+    var networkManager = NetworkManager()
+    let mainViewCell = MainViewCell()
+    let searchBar = UISearchBar()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +31,9 @@ class MainCollectionViewController: UICollectionViewController, UISearchBarDeleg
         self.searchBar.delegate = self
         
         collectionView.register(MainViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-        collectionView.allowsSelection = true
     }
+    
+    
     
     func sortResults() {
         
@@ -55,9 +56,9 @@ class MainCollectionViewController: UICollectionViewController, UISearchBarDeleg
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if isSearching {
-            return filteredResults.count
+            return self.filteredResults.count
         } else {
-            return sortedResults.count
+            return self.sortedResults.count
         }
     }
     
@@ -69,11 +70,11 @@ class MainCollectionViewController: UICollectionViewController, UISearchBarDeleg
         imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
 
         if isSearching {
-            self.mainViewCell.setUpCellImage(indexPath.row, filteredResults) { (image) in
+            self.mainViewCell.setUpCellImage(indexPath.row, self.filteredResults) { (image) in
                 imageView.image = image
             }
         } else {
-            self.mainViewCell.setUpCellImage(indexPath.row, sortedResults) { (image) in
+            self.mainViewCell.setUpCellImage(indexPath.row, self.sortedResults) { (image) in
                 imageView.image = image
             }
         }
@@ -93,9 +94,7 @@ class MainCollectionViewController: UICollectionViewController, UISearchBarDeleg
     }
     
     func configureSearchBar() {
-        
         self.searchBar.placeholder = "Search"
-        
         self.navigationItem.titleView = searchBar
     }
     
@@ -108,7 +107,7 @@ class MainCollectionViewController: UICollectionViewController, UISearchBarDeleg
         } else {
             isSearching = true
             searchBar.setShowsCancelButton(true, animated: true)
-            self.filteredResults = sortedResults.filter({ (results) -> Bool in
+            filteredResults = self.sortedResults.filter({ (results) -> Bool in
                 guard let artistName = results.artistName else { return false }
                 return artistName.lowercased().contains(searchText.lowercased())
             })
@@ -117,11 +116,10 @@ class MainCollectionViewController: UICollectionViewController, UISearchBarDeleg
     }
     
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
-        
         self.searchBar.text? = ""
         searchBar.setShowsCancelButton(false, animated: true)
         self.searchBar.endEditing(true)
-        self.isSearching = false
+        isSearching = false
     }
     
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
@@ -131,43 +129,10 @@ class MainCollectionViewController: UICollectionViewController, UISearchBarDeleg
     
     // MARK: UICollectionViewDelegate
     
-    /*
-     // Uncomment this method to specify if the specified item should be highlighted during tracking
-     override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-     return true
-     }
-     */
-    
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        
-        self.navigationController?.pushViewController(DetailViewController(), animated: false)
-
-        return true
-    }
-    
-    
-    /*
-     // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-     override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-     return false
-     }
-     
-     override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-     
-     }
-     */
-    
-}
-
-extension MainCollectionViewController: NetworkManagerDelegate {
-    
-    func refresh() {
-        DispatchQueue.main.async {
-            self.collectionView.reloadData()
-        }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        detailVC.results = self.sortedResults
+        detailVC.indexPath = indexPath.row
+        self.navigationController?.pushViewController(detailVC, animated: true)
     }
 }

@@ -131,6 +131,5 @@ struct Results : Codable {
         contentAdvisoryRating = try values.decodeIfPresent(String.self, forKey: .contentAdvisoryRating)
         isStreamable = try values.decodeIfPresent(Bool.self, forKey: .isStreamable)
     }
-
 }
 
