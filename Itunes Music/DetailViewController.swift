@@ -25,14 +25,12 @@ class DetailViewController: UIViewController {
     let artistLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Artist label"
         return label
     }()
     
     let genreLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Genre label"
         return label
     }()
 
@@ -65,6 +63,8 @@ class DetailViewController: UIViewController {
             if let image = UIImage(data: data) {
                 DispatchQueue.main.async {
                     self.imageView.image = image
+                    self.artistLabel.text = results[indexPath].artistName
+                    self.genreLabel.text = results[indexPath].primaryGenreName
                 }
             }
         }
