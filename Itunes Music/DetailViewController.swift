@@ -36,13 +36,16 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        settings()
+    }
+    
+    func settings() {
         self.view.backgroundColor = .white
         self.view.addSubview(imageView)
         self.view.addSubview(artistLabel)
         self.view.addSubview(genreLabel)
         attachInfoToItems()
         setUpLayOuts()
-   
     }
     
     func attachInfoToItems() {
