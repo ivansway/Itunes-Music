@@ -13,7 +13,6 @@ class DetailViewController: UIViewController {
     let networkManager = NetworkManager()
     var indexPath: Int?
     var results: [Results]?
-    var mirror = Mirror(reflecting: MainCollectionViewController())
     
 
     let imageView: UIImageView = {
@@ -43,10 +42,7 @@ class DetailViewController: UIViewController {
         self.view.addSubview(genreLabel)
         attachInfoToItems()
         setUpLayOuts()
-        
-        for case let (label, value) in mirror.children {
-            print(label as Any, value)
-        }
+   
     }
     
     func attachInfoToItems() {
